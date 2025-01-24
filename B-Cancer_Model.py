@@ -15,10 +15,10 @@ import requests
 url ='https://github.com/Abudho/Trained_Model_Cancer/blob/main/trained_model_cancer.sav'
 loaded_model = requests.get(url)
 
-with open ('trained_model_cancer.sav','wb') as f:
-    pickle.dump(loaded_model,f)
+with open ('trained_model_cancer.sav', 'wb') as f:
+    pickle.dump(loaded_model, f)
     
-with open ('trained_model_cancer.sav','rb') as f:
+with open ('trained_model_cancer.sav', 'rb') as f:
     loaded_model = pickle.load(f)
     
 def breast_cancer_prediction(input_data):
