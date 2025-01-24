@@ -51,3 +51,5 @@ def main():
     if st.button ("PREDICT"):
         diagnosis = breast_cancer_prediction([radius,texture,perimeter,area,smoothness])
     st.success(diagnosis)
+    if __name__=='__main__':
+        main()    
