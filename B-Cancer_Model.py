@@ -23,7 +23,7 @@ with open ('trained_model_cancer.sav', 'rb') as f:
     
 def breast_cancer_prediction(input_data):
     input_data_as_numpy_array = np.array(input_data)
-    input_data_reshaped = input_data_as_numpy_array.reshape (1,-1)
+    input_data_reshaped = input_data_as_numpy_array.reshape (1, -1)
     prediction = loaded_model.predict(input_data_reshaped)
     
     if prediction[0]==0:
